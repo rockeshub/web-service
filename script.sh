@@ -4,7 +4,7 @@ apt-get update
 apt-get install -y postgresql
 pg_ctlcluster 11 main start
 sleep 5
-DB_NAME=weservice
+DB_NAME=webservice
 DB_USER=deploy
 DB_USER_PASS=deploy
 su postgres <<EOF
