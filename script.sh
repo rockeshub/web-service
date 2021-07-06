@@ -4,9 +4,9 @@ apt-get update
 apt-get install -y postgresql
 pg_ctlcluster 11 main start
 sleep 5
-DB_NAME=postgres
+DB_NAME=weservice
 DB_USER=postgres
-DB_USER_PASS=deploy
+DB_USER_PASS=postgres
 su postgres <<EOF
 createdb  $DB_NAME;
 psql -c "CREATE USER $DB_USER WITH PASSWORD '$DB_USER_PASS';"
