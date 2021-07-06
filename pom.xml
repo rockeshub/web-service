@@ -8,7 +8,7 @@
     <groupId>com.demo.webservice</groupId>
     <artifactId>webservice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
     <name>Webservice</name>
 
     <repositories>
