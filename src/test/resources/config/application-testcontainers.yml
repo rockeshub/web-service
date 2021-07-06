@@ -13,8 +13,8 @@ spring:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
     url: jdbc:tc:postgresql:13.3:///webservice?TC_TMPFS=/testtmpfs:rw
-    username: postgres
-    password: postgres
+    username: deploy
+    password: deploy
     hikari:
       poolName: Hikari
       auto-commit: false
