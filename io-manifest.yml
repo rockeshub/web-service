@@ -1,0 +1,91 @@
+application:
+  appId: java-webservice
+  assetId: java-webservice
+  appName: java-webservice
+  projectLanguage: Java
+  platformVersion: Java 11
+  buildSystem: Maven
+  riskMatrixRevision: default
+  sourceFilePattern: (?s).*((/[a-z]+)*)/src/main/java(?s).*
+  sensitivePackagePattern: (?s).*((/[a-z]+)*)/koddas/web/war/([A-Za-z]*).java(?s).*
+  fileChangeThreshold: 10
+tool_information:
+  - tool_name: coverity
+    enabled: false
+    fields:
+      file_path: coverity-results.json
+      instance_url: <<COVERITY_CONNECT_URL>>
+      username: <<COV_USER>>
+      password: <<COV_PASS>>
+  - tool_name: polaris
+    enabled: false
+    fields:
+      project_name: rockeshub/java-webservice
+      instance_url: <<POLARIS_URL>>
+      auth_token: <<POLARIS_ACCESS_TOKEN>>
+  - tool_name: blackduck
+    enabled: true
+    fields:
+      project_name: java-webservice
+      instance_url: <<BLACKDUCK_SERVER_URL>>
+      auth_token: <<BLACKDUCK_ACCESS_TOKEN>>
+  - tool_name: seeker
+    enabled: true
+    fields:
+      project_name: java-webservice
+      instance_url: <<SEEKER_SERVER_URL>>
+      auth_token: <<SEEKER_ACCESS_TOKEN>>
+  - tool_name: tinfoil
+    enabled: true
+    fields:
+      api_id: 5614
+      instance_url: <<TINFOIL_SERVER_URL>>
+      secret_key: <<TINFOIL_SECRET_KEY>>
+      access_key: <<TINFOIL_ACCESS_KEY>>
+environment:
+  enableJira: false
+  scm: github
+  scmOwner: rockeshub
+  scmRepositoryName: web-service
+  scmBranchName: master
+  githubApiUrl: "https://api.github.com/repos"
+  githubUsername: rockeshub
+  githubToken: <<GITHUB_TOKEN>>
+  jiraProjectName: IOD
+  jiraIssuesQuery: project=IOD
+  jiraApiUrl: https://io-jira.dev.polaris.synopsys.com
+  jiraUserName: rakeshnc
+  jiraAuthToken: <<JIRA_AUTH_TOKEN>>
+  testDeploymentRoot: /
+security:
+  pipeline:
+    type: "Inline"
+    toolchain: "Synopsys"
+    runSonar: true
+  activities:
+    dast:
+      rescanThreshold: 10
+    sastplusm:
+      rescanThreshold: 10
+    dastplusm:
+      rescanThreshold: 10
+    imageScan:
+      rescanThreshold: 10
+connectors:
+  - connector_name: slack
+    fields:
+      channelidentifier: C01RF6ALQ49
+      bearertoken: <<SLACK_TOKEN>>
+buildbreaker:
+  - activityname: dast
+    status:
+      - new
+      - open
+    overallseverity:
+      - high
+  - activityname: sca
+    status:
+      - new
+      - open
+    overallseverity:
+      - medium
