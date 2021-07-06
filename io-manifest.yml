@@ -38,7 +38,7 @@ tool_information:
   - tool_name: tinfoil
     enabled: true
     fields:
-      api_id: 5614
+      api_id: 5547
       instance_url: <<TINFOIL_SERVER_URL>>
       secret_key: <<TINFOIL_SECRET_KEY>>
       access_key: <<TINFOIL_ACCESS_KEY>>
