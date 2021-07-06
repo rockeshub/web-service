@@ -61,7 +61,7 @@ security:
   pipeline:
     type: "Inline"
     toolchain: "Synopsys"
-    runSonar: true
+    runSonar: false
   activities:
     dast:
       rescanThreshold: 10
