@@ -82,7 +82,7 @@ connectors:
       projectkey: WEB
       assignee: rakeshnc
       url: https://io-jira.dev.polaris.synopsys.com
-      username: rakeshnc@synopsys.com
+      username: rakeshnc
       authtoken: <<JIRA_AUTH_TOKEN>>
   - connector_name: github
     fields:
