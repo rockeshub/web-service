@@ -43,7 +43,7 @@ tool_information:
       secret_key: <<TINFOIL_SECRET_KEY>>
       access_key: <<TINFOIL_ACCESS_KEY>>
 environment:
-  enableJira: false
+  enableJira: true
   scm: github
   scmOwner: rockeshub
   scmRepositoryName: web-service
