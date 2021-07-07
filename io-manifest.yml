@@ -51,8 +51,8 @@ environment:
   githubApiUrl: "https://api.github.com/repos"
   githubUsername: rockeshub
   githubToken: <<GITHUB_TOKEN>>
-  jiraProjectName: IOD
-  jiraIssuesQuery: project=IOD
+  jiraProjectName: WEB
+  jiraIssuesQuery: project=WEB
   jiraApiUrl: https://io-jira.dev.polaris.synopsys.com
   jiraUserName: rakeshnc
   jiraAuthToken: <<JIRA_AUTH_TOKEN>>
