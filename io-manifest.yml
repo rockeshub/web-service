@@ -52,7 +52,7 @@ environment:
   githubUsername: rockeshub
   githubToken: <<GITHUB_TOKEN>>
   jiraProjectName: WEB
-  jiraIssuesQuery: project=WEB
+  jiraIssuesQuery: resolution = Unresolved
   jiraApiUrl: https://io-jira.dev.polaris.synopsys.com
   jiraUserName: rakeshnc
   jiraAuthToken: <<JIRA_AUTH_TOKEN>>
