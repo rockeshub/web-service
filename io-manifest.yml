@@ -1,2 +1,4 @@
 application:
   release: Maven
+environment: 
+  scm: github
