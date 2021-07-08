@@ -8,3 +8,6 @@ security:
 buildbreaker:
   - activityname: dast
     status:
+    categories:
+    - name: 
+      severity: 
