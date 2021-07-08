@@ -1,2 +1,2 @@
 application:
-  buildSystem: Maven
+  release: Maven
