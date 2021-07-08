@@ -1,6 +1,5 @@
+template: high-risk
 application:
-  appId: java-webservice
-  assetId: java-webservice
   appName: java-webservice
   projectLanguage: Java
   platformVersion: Java 11
@@ -9,53 +8,8 @@ application:
   sourceFilePattern: (?s).*((/[a-z]+)*)/src/main/java(?s).*
   sensitivePackagePattern: (?s).*((/[a-z]+)*)/koddas/web/war/([A-Za-z]*).java(?s).*
   fileChangeThreshold: 10
-tool_information:
-  - tool_name: coverity
-    enabled: false
-    fields:
-      file_path: coverity-results.json
-      instance_url: <<COVERITY_CONNECT_URL>>
-      username: <<COV_USER>>
-      password: <<COV_PASS>>
-  - tool_name: polaris
-    enabled: false
-    fields:
-      project_name: rockeshub/java-webservice
-      instance_url: <<POLARIS_URL>>
-      auth_token: <<POLARIS_ACCESS_TOKEN>>
-  - tool_name: blackduck
-    enabled: true
-    fields:
-      project_name: java-webservice
-      instance_url: <<BLACKDUCK_SERVER_URL>>
-      auth_token: <<BLACKDUCK_ACCESS_TOKEN>>
-  - tool_name: seeker
-    enabled: true
-    fields:
-      project_name: java-webservice
-      instance_url: <<SEEKER_SERVER_URL>>
-      auth_token: <<SEEKER_ACCESS_TOKEN>>
-  - tool_name: tinfoil
-    enabled: true
-    fields:
-      api_id: 5548
-      instance_url: <<TINFOIL_SERVER_URL>>
-      secret_key: <<TINFOIL_SECRET_KEY>>
-      access_key: <<TINFOIL_ACCESS_KEY>>
 environment:
-  enableJira: true
   scm: github
-  scmOwner: rockeshub
-  scmRepositoryName: web-service
-  scmBranchName: master
-  githubApiUrl: "https://api.github.com/repos"
-  githubUsername: rockeshub
-  githubToken: <<GITHUB_TOKEN>>
-  jiraProjectName: IOD
-  jiraIssuesQuery: resolution = Unresolved
-  jiraApiUrl: https://io-jira.dev.polaris.synopsys.com
-  jiraUserName: rakeshnc
-  jiraAuthToken: <<JIRA_AUTH_TOKEN>>
   testDeploymentRoot: /
 security:
   pipeline:
@@ -71,28 +25,6 @@ security:
       rescanThreshold: 10
     imageScan:
       rescanThreshold: 10
-connectors:
-  - connector_name: slack
-    fields:
-      channelidentifier: C01RF6ALQ49
-      bearertoken: <<SLACK_TOKEN>>
-  - connector_name: jira
-    fields:
-      issuetype: Bug
-      projectkey: IOD
-      assignee: rakeshnc
-      url: https://io-jira.dev.polaris.synopsys.com
-      username: rakeshnc
-      authtoken: <<JIRA_AUTH_TOKEN>>
-  - connector_name: github
-    fields:
-      file_path: workflowengine-results.sarif.json
-      owner_name: 
-      repository_name: 
-      ref: 
-      commit_id: 
-      username: rockeshub
-      accesstoken: <<GITHUB_ACCESS_TOKEN>>
 buildbreaker:
   - activityname: dast
     status:
