@@ -2,3 +2,6 @@ application:
   release: Maven
 environment: 
   scm: github
+security:
+  pipeline:
+    runSonar: false
