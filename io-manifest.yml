@@ -7,3 +7,4 @@ security:
     runSonar: false
 buildbreaker:
   - activityname: dast
+    status:
