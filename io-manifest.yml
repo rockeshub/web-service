@@ -19,3 +19,16 @@ tool_information:
       instance_url: <<COVERITY_CONNECT_URL>>
       username: <<COV_USER>>
       password: <<COV_PASS>>
+connectors:
+  - connector_name: slack
+    fields:
+      channelidentifier: C01RF6ALQ49
+      bearertoken: <<SLACK_TOKEN>>
+  - connector_name: jira
+    fields:
+      issuetype:
+      projectkey:
+      assignee: rakeshnc
+      url: https://io-jira.dev.polaris.synopsys.com
+      username: rakeshnc
+      authtoken: <<JIRA_AUTH_TOKEN>>
