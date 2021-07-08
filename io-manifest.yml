@@ -1,5 +1,4 @@
 application:
-  appId: java-webservice
   assetId: java-webservice
   appName: java-webservice
   projectLanguage: Java
