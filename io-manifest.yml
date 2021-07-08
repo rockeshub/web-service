@@ -11,3 +11,11 @@ buildbreaker:
     categories:
     - name: 
       severity: 
+tool_information:
+  - tool_name: coverity
+    enabled: false
+    fields:
+      file_path: coverity-results.json
+      instance_url: <<COVERITY_CONNECT_URL>>
+      username: <<COV_USER>>
+      password: <<COV_PASS>>
