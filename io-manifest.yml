@@ -7,26 +7,3 @@ security:
     runSonar: false
 buildbreaker:
   - activityname: dast
-    status:
-      - new
-      - open
-    overallseverity:
-      - high
-    categories:
-    - name: cross-site scripting
-      severity: high
-  - activityname: sca
-    status:
-      - new
-      - open
-    overallseverity:
-      - medium
-    categories:
-    - name: 
-      severity:
-  - activityname: 
-    status:
-      - new
-      - open
-    overallseverity:
-      - medium
