@@ -63,12 +63,16 @@ security:
     toolchain: "Synopsys"
     runSonar: false
   activities:
+    sast:
+      rescanThreshold: 10
+    sca:
+      rescanThreshold: 10
     dast:
-      rescanThreshold: 10
+      rescanThreshold: 20
     sastplusm:
-      rescanThreshold: 10
+      rescanThreshold: 30
     dastplusm:
-      rescanThreshold: 10
+      rescanThreshold: 30
     imageScan:
       rescanThreshold: 10
 connectors:
