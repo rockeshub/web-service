@@ -1,3 +1,4 @@
+template: high-risk
 application:
   release: Maven
 environment: 
