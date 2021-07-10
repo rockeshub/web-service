@@ -1,3 +1,4 @@
+template: high-risk
 application:
   appId: java-webservice
   assetId: java-webservice
@@ -14,34 +15,14 @@ tool_information:
     enabled: false
     fields:
       file_path: coverity-results.json
-      instance_url: <<COVERITY_CONNECT_URL>>
-      username: <<COV_USER>>
-      password: <<COV_PASS>>
-  - tool_name: polaris
-    enabled: false
-    fields:
-      project_name: rockeshub/java-webservice
-      instance_url: <<POLARIS_URL>>
-      auth_token: <<POLARIS_ACCESS_TOKEN>>
-  - tool_name: blackduck
-    enabled: true
-    fields:
-      project_name: java-webservice
-      instance_url: <<BLACKDUCK_SERVER_URL>>
-      auth_token: <<BLACKDUCK_ACCESS_TOKEN>>
   - tool_name: seeker
     enabled: true
     fields:
-      project_name: java-webservice
-      instance_url: <<SEEKER_SERVER_URL>>
-      auth_token: <<SEEKER_ACCESS_TOKEN>>
+      project_name: java-webservic
   - tool_name: tinfoil
     enabled: true
     fields:
       api_id: 5548
-      instance_url: <<TINFOIL_SERVER_URL>>
-      secret_key: <<TINFOIL_SECRET_KEY>>
-      access_key: <<TINFOIL_ACCESS_KEY>>
 environment:
   enableJira: true
   scm: github
