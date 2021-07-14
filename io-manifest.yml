@@ -32,7 +32,7 @@ environment:
   githubApiUrl: "https://api.github.com/repos"
   githubUsername: rockeshub
   githubToken: <<GITHUB_TOKEN>>
-  jiraProjectName: IOD
+  jiraProjectName: WEB
   jiraIssuesQuery: resolution = Unresolved
   jiraApiUrl: https://io-jira.dev.polaris.synopsys.com
   jiraUserName: rakeshnc
@@ -64,7 +64,7 @@ connectors:
   - connector_name: jira
     fields:
       issuetype: Bug
-      projectkey: IOD
+      projectkey: WEB
       assignee: rakeshnc
       url: https://io-jira.dev.polaris.synopsys.com
       username: rakeshnc
