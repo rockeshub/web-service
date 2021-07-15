@@ -1,4 +1,3 @@
-template: high-risk
 application:
   appId: java-webservice
   assetId: java-webservice
