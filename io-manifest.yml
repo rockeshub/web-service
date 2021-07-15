@@ -11,18 +11,10 @@ application:
   sensitivePackagePattern: (?s).*((/[a-z]+)*)/koddas/web/war/([A-Za-z]*).java(?s).*
   fileChangeThreshold: 10
 tool_information:
-  - tool_name: coverity
-    enabled: false
-    fields:
-      file_path: coverity-results.json
-  - tool_name: seeker
+  - tool_name: sigma
     enabled: true
     fields:
-      project_name: java-webservic
-  - tool_name: tinfoil
-    enabled: true
-    fields:
-      api_id: 5548
+      output_file: sigma-results.json
 environment:
   enableJira: true
   scm: github
