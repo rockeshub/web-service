@@ -13,7 +13,7 @@ tool_information:
   - tool_name: sigma
     enabled: false
     fields:
-      output_path: sigma-results.json
+      output_file: sigma-results.json
 environment:
   enableJira: true
   scm: github
