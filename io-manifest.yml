@@ -76,7 +76,7 @@ buildbreaker:
       - open
     overallseverity:
       - high
-  - activityname: sca
+  - activityname: sast
     status:
       - new
       - open
