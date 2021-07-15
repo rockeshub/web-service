@@ -17,10 +17,6 @@ tool_information:
       instance_url: <<TINFOIL_SERVER_URL>>
       secret_key: <<TINFOIL_SECRET_KEY>>
       access_key: <<TINFOIL_ACCESS_KEY>>
-  - tool_name: sigma
-    enabled: false
-    fields:
-      output_file: sigma-results.json
 environment:
   enableJira: true
   scm: github
