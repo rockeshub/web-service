@@ -11,7 +11,7 @@ application:
   fileChangeThreshold: 10
 tool_information:
   - tool_name: coverity
-    enabled: true
+    enabled: false
     fields:
       file_path: coverity-results.json
 environment:
