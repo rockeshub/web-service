@@ -32,7 +32,7 @@ environment:
 security:
   pipeline:
     type: "Inline"
-    toolchain: SYNOPSYS
+    toolchain: "Synopsys"
     runSonar: false
   activities:
     sast:
