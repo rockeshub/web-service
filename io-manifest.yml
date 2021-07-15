@@ -11,12 +11,12 @@ application:
   fileChangeThreshold: 10
 tool_information:
   - tool_name: tinfoil
-      enabled: true
-      fields:
-        api_id: 5548
-        instance_url: <<TINFOIL_SERVER_URL>>
-        secret_key: <<TINFOIL_SECRET_KEY>>
-        access_key: <<TINFOIL_ACCESS_KEY>>
+    enabled: true
+    fields:
+      api_id: 5548
+      instance_url: <<TINFOIL_SERVER_URL>>
+      secret_key: <<TINFOIL_SECRET_KEY>>
+      access_key: <<TINFOIL_ACCESS_KEY>>
   - tool_name: sigma
     enabled: false
     fields:
