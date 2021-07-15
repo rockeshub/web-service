@@ -81,4 +81,4 @@ buildbreaker:
       - new
       - open
     overallseverity:
-      - medium
+      - low
