@@ -14,6 +14,10 @@ tool_information:
    enabled: true
    fields:
      project_name: java-webservice
+ - tool_name: tinfoil
+   enabled: true
+   fields:
+     api_id: 5548
 environment:
   enableJira: true
   scm: github
