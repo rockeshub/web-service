@@ -20,7 +20,7 @@ tool_information:
   - tool_name: sigma
     enabled: false
     fields:
-      output_path: coverity-results.json
+      output_file: coverity-results.json
   - tool_name: polaris
     enabled: false
     fields:
