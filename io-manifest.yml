@@ -17,6 +17,10 @@ tool_information:
       instance_url: <<COVERITY_CONNECT_URL>>
       username: <<COV_USER>>
       password: <<COV_PASS>>
+  - tool_name: sigma
+    enabled: false
+    fields:
+      output_path: coverity-results.json
   - tool_name: polaris
     enabled: false
     fields:
