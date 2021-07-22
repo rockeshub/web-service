@@ -10,12 +10,6 @@ application:
   sensitivePackagePattern: (?s).*((/[a-z]+)*)/koddas/web/war/([A-Za-z]*).java(?s).*
   fileChangeThreshold: 10
 tool_information:
-  - tool_name: seeker
-    enabled: true
-    fields:
-      project_name: java-webservice
-      instance_url: <<SEEKER_SERVER_URL>>
-      auth_token: <<SEEKER_ACCESS_TOKEN>>
   - tool_name: tinfoil
     enabled: true
     fields:
@@ -23,6 +17,12 @@ tool_information:
       instance_url: <<TINFOIL_SERVER_URL>>
       secret_key: <<TINFOIL_SECRET_KEY>>
       access_key: <<TINFOIL_ACCESS_KEY>>
+  - tool_name: seeker
+    enabled: true
+    fields:
+      project_name: java-webservice
+      instance_url: <<SEEKER_SERVER_URL>>
+      auth_token: <<SEEKER_ACCESS_TOKEN>>
 environment:
   enableJira: true
   scm: github
