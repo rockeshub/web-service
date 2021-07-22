@@ -25,7 +25,7 @@ tool_information:
       auth_token: <<SEEKER_ACCESS_TOKEN>>
 environment:
   enableJira: true
-  scm: github
+  scm: bitbucket
   scmOwner: rockeshub
   scmRepositoryName: web-service
   scmBranchName: master
