@@ -99,7 +99,7 @@ buildbreaker:
       - new
       - open
     overallseverity:
-      - high
+      - low
   - activityname: sca
     status:
       - new
