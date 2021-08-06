@@ -79,7 +79,7 @@ connectors:
       username: rockeshub
       accesstoken: <<GITHUB_ACCESS_TOKEN>>
 buildbreaker:
-  - activityname": codedx
+  - activityname: codedx
     min_risk_score: 70
   - activityname: dast
     status:
