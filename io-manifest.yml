@@ -91,3 +91,7 @@ buildbreaker:
       - open
     overallseverity:
       - low
+  codedx:
+  instance_url: <<CODEDX_SERVER_URL>>
+  api_key: <<CODEDX_API_KEY>>
+  project_id: 1
