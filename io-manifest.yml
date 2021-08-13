@@ -23,6 +23,12 @@ tool_information:
       project_name: java-webservice
       instance_url: <<SEEKER_SERVER_URL>>
       auth_token: <<SEEKER_ACCESS_TOKEN>>
+  - tool_name: polaris
+    enabled: false
+    fields:
+      project_name: rockeshub/java-webservice
+      instance_url: <<POLARIS_URL>>
+      auth_token: <<POLARIS_ACCESS_TOKEN>>
 environment:
   enableJira: true
   scm: github
